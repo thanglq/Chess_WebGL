@@ -1,62 +1,136 @@
 <!DOCTYPE html>
-    <html>
-    <head>
-      <meta charset='utf-8'>
-      <meta name='viewport' content='width=device-width'>
-      <title>Privacy Policy</title>
-      <style> body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding:1em; } </style>
-    </head>
-    <body>
-    <h2>Privacy Policy</h2> <p> Nugem Studio built the Kkanbu Battle game as a Free app. This SERVICE is provided by
-                    Nugem Studio at no cost and is intended for use as is.
-                  </p> <p>This page is used to inform visitors regarding my policies with the collection, use, and disclosure
-                    of Personal Information if anyone decided to use my Service.
-                  </p> <p>If you choose to use my Service, then you agree to the collection and use of information in
-                    relation to this policy. The Personal Information that I collect is used for providing and improving
-                    the Service. I will not use or share your information with anyone except as described
-                    in this Privacy Policy.
-                  </p> <p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is
-                    accessible at Kkanbu Battle unless otherwise defined in this Privacy Policy.
-                  </p> <p><strong>Information Collection and Use</strong></p> <p>For a better experience, while using our Service, I may require you to provide us with certain
-                    personally identifiable information. The information that I request will be retained on your device and is not collected by me in any way.
-                  </p> <p>The app does use third party services that may collect information used to identify you.</p> <div><p>Link to privacy policy of third party service providers used by the app</p> <ul><li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Play Services</a></li><!----><!----><!----><!----><!----><!----><!----><!----></ul></div> <p><strong>Log Data</strong></p> <p> I want to inform you that whenever you use my Service, in a case of
-                    an error in the app I collect data and information (through third party products) on your phone
-                    called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address,
-                    device name, operating system version, the configuration of the app when utilizing my Service,
-                    the time and date of your use of the Service, and other statistics.
-                  </p> <p><strong>Cookies</strong></p> <p>Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers.
-                    These are sent to your browser from the websites that you visit and are stored on your device's internal
-                    memory.
-                  </p> <p>This Service does not use these “cookies” explicitly. However, the app may use third party code and
-                    libraries that use “cookies” to collect information and improve their services. You have the option to
-                    either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose
-                    to refuse our cookies, you may not be able to use some portions of this Service.
-                  </p> <p><strong>Service Providers</strong></p> <p> I may employ third-party companies and individuals due to the following reasons:</p> <ul><li>To facilitate our Service;</li> <li>To provide the Service on our behalf;</li> <li>To perform Service-related services; or</li> <li>To assist us in analyzing how our Service is used.</li></ul> <p> I want to inform users of this Service that these third parties have access to
-                    your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However,
-                    they are obligated not to disclose or use the information for any other purpose.
-                  </p> <p><strong>Security</strong></p> <p> I value your trust in providing us your Personal Information, thus we are striving
-                    to use commercially acceptable means of protecting it. But remember that no method of transmission over
-                    the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee
-                    its absolute security.
-                  </p> <p><strong>Links to Other Sites</strong></p> <p>This Service may contain links to other sites. If you click on a third-party link, you will be directed
-                    to that site. Note that these external sites are not operated by me. Therefore, I strongly
-                    advise you to review the Privacy Policy of these websites. I have no control over
-                    and assume no responsibility for the content, privacy policies, or practices of any third-party sites
-                    or services.
-                  </p> <p><strong>Children’s Privacy</strong></p> <p>These Services do not address anyone under the age of 13. I do not knowingly collect
-                    personally identifiable information from children under 13. In the case I discover that a child
-                    under 13 has provided me with personal information, I immediately delete this from
-                    our servers. If you are a parent or guardian and you are aware that your child has provided us with personal
-                    information, please contact me so that I will be able to do necessary actions.
-                  </p> <p><strong>Changes to This Privacy Policy</strong></p> <p> I may update our Privacy Policy from time to time. Thus, you are advised to review
-                    this page periodically for any changes. I will notify you of any changes by posting
-                    the new Privacy Policy on this page. These changes are effective immediately after they are posted on
-                    this page.
-                  </p> <p><strong>Contact Us</strong></p> <p>If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact
-                    me at neugemstudio@gmail.com.
-                  </p> <p>This privacy policy page was created at <a href="https://privacypolicytemplate.net" target="_blank">privacypolicytemplate.net</a>
-                    and modified/generated by <a href="https://app-privacy-policy-generator.firebaseapp.com/" target="_blank">App
-                      Privacy Policy Generator</a></p>
-    </body>
-    </html>
-      
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>ChineseChess</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <style>
+        /* @media only screen and (orientation:portrait) {
+            body {
+                width: 100vh;
+                height: 100vw;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(90deg);
+            }
+        }*/
+        /*@media only screen and (orientation:landscape) {
+            #turn {
+                display: none;
+            }
+        }*/
+
+        /* (B) CORRECT ORIENTATION - SHOW CONTENT HIDE MESSAGE */
+        /*@media only screen and (orientation:portrait) {
+            #turn {
+                display: block;
+            }
+        }*/
+    </style>
+  </head>
+  <body class="dark">
+      <div id="unity-container" class="unity-desktop">
+          <canvas id="unity-canvas"></canvas>
+      </div>
+      <div id="loading-cover" style="display:none;">
+          <div id="unity-loading-bar">
+              <div id="unity-logo"><img src="logo.png"></div>
+              <div id="unity-progress-bar-empty" style="display: none;">
+                  <div id="unity-progress-bar-full"></div>
+              </div>
+              <div class="spinner"></div>
+          </div>
+      </div>
+      <!--<div id="turn">
+          Please rotate your device!
+      </div>-->
+      <!--<div id="unity-fullscreen-button" style="display: none;"></div>-->
+      <script>
+      const hideFullScreenButton = "";
+      const buildUrl = "Build";
+      const loaderUrl = buildUrl + "/WebGL.loader.js";
+      const config = {
+        dataUrl: buildUrl + "/WebGL.data.gz",
+        frameworkUrl: buildUrl + "/WebGL.framework.js.gz",
+        codeUrl: buildUrl + "/WebGL.wasm.gz",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "RoyalGame",
+        productName: "ChineseChess",
+        productVersion: "1.0.2",
+      };
+
+      const container = document.querySelector("#unity-container");
+      const canvas = document.querySelector("#unity-canvas");
+      const loadingCover = document.querySelector("#loading-cover");
+      const progressBarEmpty = document.querySelector("#unity-progress-bar-empty");
+      const progressBarFull = document.querySelector("#unity-progress-bar-full");
+/*      const fullscreenButton = document.querySelector("#unity-fullscreen-button");*/
+      const spinner = document.querySelector('.spinner');
+      const canFullscreen = (function() {
+        for (const key of [
+            'exitFullscreen',
+            'webkitExitFullscreen',
+            'webkitCancelFullScreen',
+            'mozCancelFullScreen',
+            'msExitFullscreen',
+          ]) {
+          if (key in document) {
+            return true;
+          }
+        }
+        return false;
+      }());
+        if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+            // Mobile device style: fill the whole browser client area with the game canvas:
+            var meta = document.createElement('meta');
+            meta.name = 'viewport';
+            meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+            document.getElementsByTagName('head')[0].appendChild(meta);
+            container.className = "unity-mobile";
+            canvas.className = "unity-mobile";
+
+            // To lower canvas resolution on mobile devices to gain some
+            // performance, uncomment the following line:
+            // config.devicePixelRatio = 1;
+        } else {
+            // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
+            canvas.style.width = "100vw";
+            canvas.style.height = "100vh";
+        }
+      loadingCover.style.display = "";
+
+      const script = document.createElement("script");
+      script.src = loaderUrl;
+      script.onload = () => {
+        createUnityInstance(canvas, config, (progress) => {
+          spinner.style.display = "none";
+          progressBarEmpty.style.display = "";
+          progressBarFull.style.width = `${100 * progress}%`;
+        }).then((unityInstance) => {
+          loadingCover.style.display = "none";
+          window.unityInstance = unityInstance;
+            if (canFullscreen) {
+            const docElm = document.documentElement;
+            if (docElm.requestFullscreen) {
+                docElm.requestFullscreen();
+            } else if (docElm.mozRequestFullScreen) {
+                docElm.mozRequestFullScreen();     // Firefox
+            } else if (docElm.webkitRequestFullscreen) {
+                docElm.webkitRequestFullscreen();  // Safari
+            } else if (docElm.msRequestFullscreen) {
+                docElm.msRequestFullscreen();      // IE/Edge
+            }
+            screen.orientation.lock("landscape");
+          }
+        }).catch((message) => {
+          alert(message);
+        });
+      };
+      document.body.appendChild(script);
+      </script>
+  </body>
+</html>
